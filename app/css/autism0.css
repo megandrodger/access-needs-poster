@@ -6,7 +6,7 @@
 /*body links*/
 .container {
   position: relative;
-  width: 100%;
+  width: 94%;
   max-width: 920px;
   margin: 0 auto;
   padding: 0 0;
@@ -21,14 +21,14 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 100%;
+    width: 94%;
     /* SC edited from 80% to 100% */
     padding: 0; } }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 100%; }
+    width: 94%; }
   /* SC edited from 80% to 100% */
   .column,
   .columns {
