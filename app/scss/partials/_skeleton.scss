@@ -55,7 +55,7 @@
   body {
     margin: 0;
   }
-}
+
 
 .homeTitle {
   margin: 10px 10px 40px 10px;
@@ -63,14 +63,18 @@
 
 .homeLink {
   display: block;
-  color: #000000;
+  color: black;
   text-align: left;
   text-decoration: underline;
+  font-size: 2rem;
+  padding: 1.3rem;
+  padding-left: 3rem;
 }
 
+}
 /* Nav link */
 
-.navBar {
+/*.navBar {
   display: inline;
   justify-content: space-between;
   padding: 0rem 4rem 2rem;
@@ -111,6 +115,44 @@
 }
 
 /* Column headers */
+
+.nav {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.icon {
+  float: left;
+  padding: 16px;
+}
+
+.link {
+  padding-left: 20px;
+}
+
+
+.bottom-menu
+{
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+a {
+  display: block;
+   text-align: center;
+   padding: 30px;
+   color: black;
+   line-height: normal;
+   text-decoration-color: $lineColour;}
+li {
+    float: left;
+    display: inline;}
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
 
 .doDontHeader {
   text-align: center;
@@ -237,15 +279,17 @@ text-decoration: underline;
 
 /* for devices wider than a phablet -------------------------------------*/
 
-@media (min-width: $tablet-width) {
+@media (min-width: 400px) {
 
   .homeTitle {
     margin: 40px 0;
   }
   .homeLink {
-    font-size: 3rem;
-    margin: 2rem 1rem 0 1rem ;
-    padding: 0;
+    font-size: 2rem;
+    padding: 1.3rem;
+    padding-left: 3rem;
+    color: black;
+    text-decoration: underline;
   }
 
   .titleFlexParent {margin: 0rem;}
