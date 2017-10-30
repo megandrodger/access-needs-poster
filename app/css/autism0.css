@@ -25,6 +25,13 @@
     /* SC edited from 80% to 100% */
     padding: 0; } }
 
+/* For devices smaller than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 90%;
+    /* SC edited from 80% to 100% */
+    padding: 0; } }
+
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
