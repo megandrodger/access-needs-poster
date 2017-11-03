@@ -43,6 +43,9 @@
 /*body links*/
 .moreInfoLinkColour {color: $moreInfoLinkColour;}
 
+/*nav links*/
+.navBarColour {background-color: $secondaryColour;}
+
 
 /* for smallest devices -------------------------------------*/
 
@@ -52,7 +55,7 @@
   body {
     margin: 0;
   }
-}
+
 
 .homeTitle {
   margin: 10px 10px 40px 10px;
@@ -60,10 +63,46 @@
 
 .homeLink {
   display: block;
-  color: #000000;
+  color: black;
   text-align: left;
-  margin: 2rem 1rem 1rem 1rem;
   text-decoration: underline;
+  font-size: 2rem;
+  padding: 1.3rem;
+  padding-left: 3rem;
+}
+
+.guidanceBoxalt {
+  display: flex;
+  text-align: center;
+  margin-bottom: -10px;
+  padding: 15px;
+  height: 100px;
+
+  img {margin: auto; max-height: 60px; max-width: 80px;}
+  p {margin: 10px; padding-left: 8px; padding-right: 10px; text-align: left; font-size: 16px; line-height: 24px;}
+
+}
+
+.bottomguidance {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding: 20px 20px 20px 20px;
+
+  p {margin: 5px; text-align: left; font-size: 15px; line-height: 19px; color: #213C2F; }
+}
+
+
+}
+/* Nav link */
+
+/*.navBar {
+  display: inline;
+  justify-content: space-between;
+  padding: 0rem 4rem 2rem;
+  margin: 2rem 0 3rem 0;
+  img {max-height: 50px; max-width: 50px;}
 }
 
 /* Page title */
@@ -98,6 +137,44 @@
 
 /* Column headers */
 
+.nav {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.icon {
+  float: left;
+  padding: 16px;
+}
+
+.link {
+  padding-left: 20px;
+}
+
+
+.bottom-menu
+{
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+a {
+  display: block;
+   text-align: center;
+   padding: 30px;
+   color: black;
+   line-height: normal;
+   text-decoration-color: $lineColour;}
+li {
+    float: left;
+    display: inline;}
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
 .doDontHeader {
   text-align: center;
   border-style: solid;
@@ -124,6 +201,7 @@
   p {margin: 10px; text-align: center;}
   a {text-align: center; cursor:pointer;}
 }
+
 
 
 .moreInfoLink {
@@ -198,18 +276,20 @@ text-decoration: underline;
 
 /* for devices wider than a phablet -------------------------------------*/
 
-@media (min-width: $tablet-width) {
+@media (min-width: 400px) {
 
   .homeTitle {
     margin: 40px 0;
   }
   .homeLink {
-    font-size: 3rem;
-    margin: 2rem 1rem 0 1rem ;
-    padding: 0;
+    font-size: 2rem;
+    padding: 1.3rem;
+    padding-left: 3rem;
+    color: black;
+    text-decoration: underline;
   }
 
-  .titleFlexParent {margin: 3rem;}
+  .titleFlexParent {margin: 0rem;}
 
   .modal-body {width: 50%;}
 
@@ -227,6 +307,31 @@ text-decoration: underline;
     width: 100px;
     height: 100px;
     display: block;
+    }
+
+    .guidanceBoxalt {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      margin: 0px;
+      padding: 15px;
+      height: 200px;
+
+      img {margin: auto; max-height: 100px; max-width: 150px; padding: 5px; }
+      p {margin: 10px; padding-left: 10px; padding-right: 10px; text-align: center; font-size: 20px; line-height: 24px;}
+      a {text-align: center; cursor:pointer;}
+
+    }
+
+    .bottomguidance {
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      padding: 10px;
+      padding-right: 80px;
+      padding-left: 80px;
+
+      p {margin: 10px; text-align: center; font-size: 16px; line-height: 22px; color: #213C2F; }
     }
 
 }
@@ -497,7 +602,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 4px solid $lineColour;
+  width: 97%; }
 
 
 /* Clearing

@@ -6,7 +6,7 @@
 /*body links*/
 .container {
   position: relative;
-  width: 100%;
+  width: 94%;
   max-width: 920px;
   margin: 0 auto;
   padding: 0 0;
@@ -21,14 +21,21 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 100%;
+    width: 94%;
+    /* SC edited from 80% to 100% */
+    padding: 0; } }
+
+/* For devices smaller than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 90%;
     /* SC edited from 80% to 100% */
     padding: 0; } }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 100%; }
+    width: 94%; }
   /* SC edited from 80% to 100% */
   .column,
   .columns {
@@ -672,8 +679,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
 
 h1 {
+<<<<<<< HEAD
   font-size: 2.8rem;
   letter-spacing: normal; }
+=======
+  font-size: 2.9rem; }
+>>>>>>> f72cb7267e9306571b961066055951061a88df98
 
 h2 {
   font-size: 1.9rem;

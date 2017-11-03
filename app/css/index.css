@@ -6,7 +6,7 @@
 /*body links*/
 .container {
   position: relative;
-  width: 100%;
+  width: 94%;
   max-width: 920px;
   margin: 0 auto;
   padding: 0 0;
@@ -21,18 +21,25 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 100%;
+    width: 94%;
+    /* SC edited from 80% to 100% */
+    padding: 0; } }
+
+/* For devices smaller than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 90%;
     /* SC edited from 80% to 100% */
     padding: 0; } }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 100%; }
+    width: 94%; }
   /* SC edited from 80% to 100% */
   .column,
   .columns {
-    /*margin-left: 4%; SC commented out */ }
+    /*margin-left: 4%; */ }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -158,21 +165,63 @@
 .moreInfoLinkColour {
   color: #17405b; }
 
+/*nav links*/
+.navBarColour {
+  background-color: #f4f9fc; }
+
 /* for smallest devices -------------------------------------*/
 /* Nav */
 @media (max-width: 400px) {
   body {
-    margin: 0; } }
+    margin: 0; }
+  .homeTitle {
+    margin: 10px 10px 40px 10px; }
+  .homeLink {
+    display: block;
+    color: black;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 2rem;
+    padding: 1.3rem;
+    padding-left: 3rem; }
+  .guidanceBoxalt {
+    display: flex;
+    text-align: center;
+    margin-bottom: -10px;
+    padding: 15px;
+    height: 100px; }
+    .guidanceBoxalt img {
+      margin: auto;
+      max-height: 60px;
+      max-width: 80px; }
+    .guidanceBoxalt p {
+      margin: 10px;
+      padding-left: 8px;
+      padding-right: 10px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 24px; }
+  .bottomguidance {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding: 20px 20px 20px 20px; }
+    .bottomguidance p {
+      margin: 5px;
+      text-align: left;
+      font-size: 15px;
+      line-height: 19px;
+      color: #213C2F; } }
 
-.homeTitle {
-  margin: 10px 10px 40px 10px; }
-
-.homeLink {
-  display: block;
-  color: #000000;
-  text-align: left;
-  margin: 2rem 1rem 1rem 1rem;
-  text-decoration: underline; }
+/* Nav link */
+/*.navBar {
+  display: inline;
+  justify-content: space-between;
+  padding: 0rem 4rem 2rem;
+  margin: 2rem 0 3rem 0;
+  img {max-height: 50px; max-width: 50px;}
+}
 
 /* Page title */
 .titleFlexParent {
@@ -202,6 +251,37 @@
     margin-left: 0; }
 
 /* Column headers */
+.nav {
+  overflow: hidden;
+  display: inline-block; }
+
+.icon {
+  float: left;
+  padding: 16px; }
+
+.link {
+  padding-left: 20px; }
+
+.bottom-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  .bottom-menu a {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    line-height: normal;
+    text-decoration-color: #E68B5A; }
+  .bottom-menu li {
+    float: left;
+    display: inline; }
+
+.table {
+  display: table;
+  margin: 0 auto; }
+
 .doDontHeader {
   text-align: center;
   border-style: solid;
@@ -309,15 +389,17 @@
   cursor: pointer; }
 
 /* for devices wider than a phablet -------------------------------------*/
-@media (min-width: 750px) {
+@media (min-width: 400px) {
   .homeTitle {
     margin: 40px 0; }
   .homeLink {
-    font-size: 3rem;
-    margin: 2rem 1rem 0 1rem;
-    padding: 0; }
+    font-size: 2rem;
+    padding: 1.3rem;
+    padding-left: 3rem;
+    color: black;
+    text-decoration: underline; }
   .titleFlexParent {
-    margin: 3rem; }
+    margin: 0rem; }
   .modal-body {
     width: 50%; }
   .picturebox img {
@@ -330,7 +412,42 @@
     margin: 3.5rem 0 3.5rem 0;
     width: 100px;
     height: 100px;
-    display: block; } }
+    display: block; }
+  .guidanceBoxalt {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+    height: 200px; }
+    .guidanceBoxalt img {
+      margin: auto;
+      max-height: 100px;
+      max-width: 150px;
+      padding: 5px; }
+    .guidanceBoxalt p {
+      margin: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px; }
+    .guidanceBoxalt a {
+      text-align: center;
+      cursor: pointer; }
+  .bottomguidance {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 10px;
+    padding-right: 80px;
+    padding-left: 80px; }
+    .bottomguidance p {
+      margin: 10px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      color: #213C2F; } }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -612,7 +729,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 4px solid #E68B5A;
+  width: 97%; }
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -645,7 +763,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
 
 h1 {
-  font-size: 2.0rem; }
+  font-size: 2.9rem; }
 
 h2 {
   font-size: 1.9rem; }

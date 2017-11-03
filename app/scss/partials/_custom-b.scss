@@ -48,10 +48,15 @@
 
 .homeLink {
   display: block;
-  color: #000000;
   text-align: left;
   font-size: 1.9rem;
   text-decoration: underline;
+  padding: 15px 0;
+  margin: 0;
+  a {
+    margin-left: 1rem;
+    color: #000000;
+  }
 }
 
 .header {
@@ -79,6 +84,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
   img {
     max-width: 120px;
   }
@@ -134,6 +140,7 @@
 .titleFlexParent {
   display: flex;
   margin: 1.8rem 0 1.8rem 0;
+  border-bottom: 4px solid $lineColour;
 }
   .titleFlexChild {
     margin: 2rem 0;
@@ -163,6 +170,31 @@
   text-decoration: underline;
 }
 
+.bottom-menu
+{
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+a {
+  display: block;
+   text-align: center;
+   padding: 30px;
+   color: black;
+   line-height: normal;
+   text-decoration-color: $lineColour;
+ }
+li {
+    float: left;
+    display: inline;
+    }
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
 /* Sizing for menu page picture box */
 
 .picturebox {
@@ -174,6 +206,34 @@
 }
 .picturebox img {max-height: 350px; max-width: 350px;
 }
+
+/* Previous and next buttons */
+
+.prev-next{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  a {color: #000};
+}
+.previous {
+  padding: 0.5rem;
+  background-color: $secondaryColour;
+  a {color: #000};
+}
+
+.next {
+  padding: 0.5rem;
+  background-color: $secondaryColour;
+  color: #000;
+  text-align: right;
+}
+
+.prev-next-title {
+  display: none;
+  font-size: 1.9rem;
+}
+
+
 
 /* CSS Modal ----------------------------------*/
 
@@ -256,7 +316,7 @@
     color: #000000;
     text-align: left;
     font-size: 1.9rem;
-    margin: 1rem 0 0 1.8rem;
+    margin: 0 0 0 1.8rem;
   }
 
   .titleFlexParent {
@@ -302,6 +362,7 @@ body {
   /*font-weight: 400; SC commented out */
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
