@@ -192,12 +192,12 @@
     height: 100px; }
     .guidanceBoxalt img {
       margin: auto;
-      max-height: 60px;
-      max-width: 80px; }
+      max-height: 70px;
+      max-width: 100px; }
     .guidanceBoxalt p {
       margin: 10px;
       padding-left: 8px;
-      padding-right: 10px;
+      padding-right: 45px;
       text-align: left;
       font-size: 16px;
       line-height: 24px; }
@@ -212,7 +212,64 @@
       text-align: left;
       font-size: 15px;
       line-height: 19px;
-      color: #213C2F; } }
+      color: #213C2F; }
+  .titleFlexParent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; }
+    .titleFlexParent h1 {
+      font-size: 23px; }
+  .titleFlexChild {
+    width: 70%; }
+  .headerImage {
+    margin: 1rem 0 1rem 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    display: inline; }
+  hr {
+    margin-top: 0rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 4px solid #85994B;
+    width: 97%; }
+  .link {
+    padding-left: 15px;
+    letter-spacing: -.4px; }
+    .link a h1 {
+      font-size: 19px; }
+  .icon {
+    float: left;
+    padding: 16px; }
+    .icon svg {
+      width: 18px;
+      height: 18px; }
+  .poster-menu h3 {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 24px;
+    font-size: 19px;
+    letter-spacing: -.4px; }
+  .bottom-menu {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden; }
+    .bottom-menu a {
+      display: block;
+      text-align: center;
+      padding-right: 50px;
+      padding-left: 30px;
+      padding-top: 10px;
+      color: black;
+      line-height: normal;
+      text-decoration-color: black; }
+    .bottom-menu li {
+      float: left;
+      display: inline; } }
 
 /* Nav link */
 /*.navBar {
@@ -234,15 +291,6 @@
 .titleFlexChild {
   width: 70%; }
 
-.headerImage {
-  margin: 1rem 0 1rem 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-  height: 200px;
-  display: inline; }
-
 /* Intro blurb */
 .intro {
   margin: 0 0 3.6rem 0; }
@@ -255,33 +303,9 @@
   overflow: hidden;
   display: inline-block; }
 
-.icon {
-  float: left;
-  padding: 16px; }
-
 .link {
-  padding-left: 20px; }
-
-.bottom-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-  .bottom-menu a {
-    display: block;
-    text-align: center;
-    padding: 30px;
-    color: black;
-    line-height: normal;
-    text-decoration-color: black; }
-  .bottom-menu li {
-    float: left;
-    display: inline; }
-
-.poster-menu h3 {
-  text-align: left;
-  padding-top: 20px;
-  font-size: 24px; }
+  padding-left: 20px;
+  letter-spacing: -.4px; }
 
 .table {
   display: table;
@@ -413,11 +437,13 @@
   .needsLink {
     font-size: 2.7rem; }
   .headerImage {
+    margin: 1rem 0 1rem 0;
     background-size: contain;
-    margin: 3.5rem 0 3.5rem 0;
-    width: 100px;
-    height: 100px;
-    display: block; }
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    display: inline; }
   .guidanceBoxalt {
     display: flex;
     flex-flow: column;
@@ -452,7 +478,41 @@
       text-align: left;
       font-size: 16px;
       line-height: 22px;
-      color: #213C2F; } }
+      color: #213C2F; }
+  hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 4px solid #85994B;
+    width: 97%; }
+  .link {
+    padding-left: 20px; }
+  .icon {
+    float: left;
+    padding: 16px; }
+    .icon svg {
+      width: 23px;
+      height: 23px; }
+  .poster-menu h3 {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 24px;
+    letter-spacing: -.2px; }
+  .bottom-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+    .bottom-menu a {
+      display: block;
+      text-align: center;
+      padding: 30px;
+      color: black;
+      line-height: normal;
+      text-decoration-color: black; }
+    .bottom-menu li {
+      float: left;
+      display: inline; } }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -730,13 +790,6 @@ form {
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 4px solid #85994B;
-  width: 97%; }
-
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
