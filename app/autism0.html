@@ -20,7 +20,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/autism0.css">
+  <link rel="stylesheet" href="css/autism-b.css">
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,124 +32,112 @@
 
 </head>
 
-<div id="main" class="container">
+
 
   <body class="mainColour">
 
-  <div id="nav" class="container">
-    <nav class="row">
-        <div class="twelve columns">
-          <a href="index.html"><h1 class="homeLink">Designing for accessibility</h1></a>
+  <div id="nav">
+    <nav class="twelve columns row">
+        <div class="negativeColour">
+          <h1 class="homeLink"><a href="index.html">Designing for accessibility</a></h1>
         </div>
     </nav>
   </div>
 
-    <div class="row header">
-        <div class="eight columns">
-          <h1 class="pageTitle">Designing for users on the <br><b>autistic spectrum</b></h1>
-        </div>
-        <div class="three columns offset-by-one headerImage"></div>
-    </div>
-    <div class="row header-intro">
-        <div class="eight columns">
-          <p>Individual preferences can vary widely across the spectrum so always test your designs to ensure you get the right balance.</p>
-        </div>
-    </div>
+<div id="main" class="container">
+
+  <div class="row">
+      <div class="twelve columns titleFlexParent">
+        <h1 class="titleFlexChild">Designing for users on the<br/>
+          <b>autistic spectrum</b></h1>
+          <div id="autism-header-image" class="headerImage"></div>
+      </div>
+  </div>
 
     <div class="row snippet">
-        <div class="six columns">
-          <h2><strong>Do</strong> use simple colours<br><strong>Don't</strong> use bright contrasting colours</h2>
-          <p>This is due to hyper/hypo sensitivity to colours of some users on the spectrum. It’s best to test with users to get the right balance.</p>
+        <div class="seven columns">
+          <h2 class="guidance-header"><span>Do use simple colours</span><span>Don't use bright contrasting colours</span></h2>
+          <p>Some users may experience sensitivity to sensory information such as colours, which can cause anxiety or pain.  Use a colour contrast ratio of at least 4.5:1 for text and test it with your users to get the right balance.</p>
         </div>
 
-        <div class="six columns">
-          <div class="snippet-image-container">
-            <img src="image/autismSpectrum/simpleColours.svg" alt="Simplified colour palette of colours with low saturation.">
-            <img src="image/autismSpectrum/brightContrastingColours.svg" alt="High saturation and contrast colour palette">
+        <div class="five columns">
+          <div class="guidance-img-container">
+            <img src="image/autismSpectrum/simple-palette.svg" alt="Simplified colour palette of colours with low saturation.">
+            <img src="image/autismSpectrum/bright-palette.svg" alt="High saturation and contrast colour palette">
           </div>
         </div>
     </div>
 
     <div class="row snippet">
-        <div class="six columns">
-          <h2><strong>Do</strong> write in plain language<br><strong>Don't</strong> use figures of speech and idioms</h2>
-          <p>Some users will take figurative language literally because of the careful attention to the way language is structured.</p>
+        <div class="seven columns">
+          <h2 class="guidance-header"><span>Do write in plain language</span><span>Don't use figures of speech and idioms</span></h2>
+          <p>Users on the spectrum perceive language differently and might take figures of speech and idioms literally. Writing in clear, plain language will mean your content is understood by more people.</p>
         </div>
 
-        <div class="five columns offset-by-one snippet-image-container">
-          <img src="image/autismSpectrum/doThis.svg" alt="'Do this' is an example of a clear instruction.">
-          <img src="image/autismSpectrum/rainingCatsDogs.svg" alt="An illustration of the phrase 'raining cats and dogs'.">
+        <div class="five columns">
+          <div class="guidance-img-container">
+            <img class="guidance-img" src="image/autismSpectrum/clear-instruction.svg" alt="'Do this' is an example of a clear instruction.">
+            <img class="guidance-img" src="image/autismSpectrum/cats-dogs.svg" alt="An illustration of the phrase 'raining cats and dogs'.">
+          </div>
+        </div>
+    </div>
+
+    <div class="row snippet">
+        <div class="seven columns">
+          <h2 class="guidance-header"><span>Do use simple sentences and bullets</span><span>Don't create a wall of text</span></h2>
+          <p>Lots of unbroken text can be hard to focus on, making it frustrating to read. Breaking text down into simple sentences and using bullets for important points will make your content easier to understand.</p>
+        </div>
+
+        <div class="five columns">
+          <div class="guidance-img-container">
+            <img class="guidance-img" src="image/autismSpectrum/bulleted-text.svg" alt="'Do this' is an example of a clear instruction.">
+            <img class="guidance-img" src="image/autismSpectrum/justified-text.svg" alt="An illustration of the phrase 'raining cats and dogs'.">
+          </div>
         </div>
     </div>
 
-            <div class="secondaryColour guidanceBox">
-              <img src="image/autismSpectrum/simpleColours.svg" alt="Simplified colour palette of colours with low saturation.">
-              <p>use simple colours</p>
-              <a id="simpleColoursModalLink" href="#" data-a11y-dialog-show="simpleColoursModal" class="moreInfoLink moreInfoLinkColour">more information</a>
-            </div>
-
-            <div class="secondaryColour guidanceBox">
-                <img src="image/autismSpectrum/doThis.svg"
-                alt="Example of a clear instruction: Do this.">
-                <p>write in plain English</p>
-            </div>
-
-            <div class="secondaryColour guidanceBox" >
-                <img src="image/autismSpectrum/bulletPoints.svg"
-                alt="A neat list of bullet points with.">
-                <p class="tip">use simple sentences and bullets</p>
-            </div>
-
-            <div class="secondaryColour guidanceBox" >
-                <img src="image/autismSpectrum/attachFiles.svg"
-                alt="Image of a button labelled 'Attach Files'">
-                <p class="tip flexChild">make buttons descriptive</p>
-            </div>
-
-            <div class="secondaryColour guidanceBox" >
-                <img src="image/autismSpectrum/neatTablet.svg"
-                alt="A clearly layed out tablet screen">
-                <p class="tip flexChild">build simple and consistent layouts</p>
-            </div>
-
+    <div class="row snippet">
+        <div class="seven columns">
+          <h2 class="guidance-header"><span>Do build simple and consistent layouts</span><span>Don't build complex and cluttered layouts</span></h2>
+          <p>Complex and cluttered layouts can be overwhelming for users to process.  Make your layout predictable and consistent. Put common components such as navigation and search on the top of a page in a highly visible area.</p>
         </div>
 
-        <div class="six columns">
-
-            <div class="negativeColour guidanceBox" >
-                <img class="tip flexChild"
-                src="image/autismSpectrum/brightContrastingColours.svg"
-                alt="High saturation and contrast colour palette">
-                <p class="tip flexChild">use bright contrasting colours</p>
-            </div>
-
-            <div class="negativeColour guidanceBox" >
-                <img class="tip flexChild" src="image/autismSpectrum/rainingCatsDogs.svg"
-                alt="Raining cats and dogs">
-                <p class="tip flexChild">use figures of speech and idioms</p>
-            </div>
-
-            <div class="negativeColour guidanceBox" >
-                <img class="tip flexChild" src="image/autismSpectrum/justifiedText.svg"
-                alt="Justified block of text">
-                <p class="tip flexChild">create a wall of text</p>
-            </div>
-
-            <div class="negativeColour guidanceBox" >
-                <img class="tip flexChild" src="image/autismSpectrum/clickHere.svg"
-                alt="Image of a vague 'Click Here' button">
-                <p class="tip flexChild">make buttons vague and unpredictable</p>
-            </div>
-
-            <div class="negativeColour guidanceBox" >
-                <img class="tip flexChild" src="image/autismSpectrum/messyTablet.svg"
-                alt="A tablet screen with a cluttered layout">
-                <p class="tip flexChild">build complex and cluttered layouts</p>
-            </div>
-
+        <div class="five columns">
+          <div class="guidance-img-container">
+            <img class="guidance-img" src="image/autismSpectrum/simple-layout.svg" alt="'Do this' is an example of a clear instruction.">
+            <img class="guidance-img" src="image/autismSpectrum/messy-layout.svg" alt="An illustration of the phrase 'raining cats and dogs'.">
+          </div>
         </div>
     </div>
+
+    <div class="row snippet">
+        <div class="seven columns">
+          <h2 class="guidance-header"><span>Do make buttons descriptive</span><span>Don't make buttons vague and unpredictable</span></h2>
+          <p>Not knowing what will happen after clicking a button or link can cause users stress and anxiety. Descriptive buttons and links will help users know what to expect and give them a sense of control.</p>
+        </div>
+
+        <div class="five columns">
+          <div class="guidance-img-container">
+            <img class="guidance-img" src="image/autismSpectrum/attach-files-button.svg" alt="'Do this' is an example of a clear instruction.">
+            <img class="guidance-img" src="image/autismSpectrum/click-here-button.svg" alt="An illustration of the phrase 'raining cats and dogs'.">
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns prev-next">
+        <div class="previous">
+          <a href="#">&#8249; Previous<br/><span class="prev-next-title">Deaf or hard of hearing</span></a>
+        </div>
+        <div class="next">
+          <a href="#">Next &#8250;<br/><span class="prev-next-title">Autism</span></a>
+
+        </div>
+      </div>
+    </div>
+
   </div>
+</div>
 
   <!-- MODALS ------------------------------------------------------------------------>
 
@@ -170,6 +158,19 @@
         <a href="#" type="button" class="close" data-a11y-dialog-hide aria-label="Close">Close</a>
 
       </div>
+  </div>
+
+  <div class="poster-menu negativeColour">
+  <div class="table">
+      <ul class="bottom-menu">
+        <li><a href="autism">Autism</a></li>
+        <li><a href="screenreaders">Screenreaders</a></li>
+        <li><a href="lowvision">Low Vision</a></li>
+        <li><a href="dyslexia">Dyslexia</a></li>
+        <li><a href="physical">Physical or </br>motor skills</a></li>
+        <li><a href="deaf1" style="text-decoration: none;">Deaf or hard</br>of hearing</a></li>
+      </ul>
+    </div>
   </div>
 
   <!-- MODALS end------------------------------------------------->

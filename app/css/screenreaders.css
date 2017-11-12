@@ -39,7 +39,7 @@
   /* SC edited from 80% to 100% */
   .column,
   .columns {
-    /*margin-left: 4%; SC commented out */ }
+    /*margin-left: 4%; */ }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
