@@ -202,7 +202,7 @@
       font-size: 16px;
       line-height: 24px; }
   .bottomguidance {
-    text-align: center;
+    text-align: left;
     margin-top: 0px;
     margin-bottom: 50px;
     padding-top: 10px;
@@ -239,8 +239,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 200px;
   display: inline; }
 
 /* Intro blurb */
@@ -273,10 +273,15 @@
     padding: 30px;
     color: black;
     line-height: normal;
-    text-decoration-color: #B58840; }
+    text-decoration-color: black; }
   .bottom-menu li {
     float: left;
     display: inline; }
+
+.poster-menu h3 {
+  text-align: left;
+  padding-top: 20px;
+  font-size: 24px; }
 
 .table {
   display: table;
@@ -440,11 +445,11 @@
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 10px;
-    padding-right: 80px;
-    padding-left: 80px; }
+    padding-right: 65px;
+    padding-left: 65px; }
     .bottomguidance p {
       margin: 10px;
-      text-align: center;
+      text-align: left;
       font-size: 16px;
       line-height: 22px;
       color: #213C2F; } }
