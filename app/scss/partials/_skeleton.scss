@@ -58,7 +58,7 @@
 
 
 .homeTitle {
-  margin: 10px 10px 40px 10px;
+ margin: 10px 0;
 }
 
 .homeLink {
@@ -210,12 +210,59 @@ text-decoration: underline;
 
 /* Sizing for menu page picture box */
 
+.home-intro {
+  padding: 0 0 1rem 0;
+}
+.title-line-1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.title-line-2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
 .picturebox {
   flex-flow: column;
   text-align: center;
   margin-bottom: 40px;
   img {max-width: 90%; max-height: 200px;}
   a {margin-top: 0; display: block; color: black;}
+}
+
+.home-card {
+  margin: 1.5rem;
+  p {
+    text-align: center;
+  }
+}
+
+
+.full-width {
+  padding: 1.5rem;
+  background-color: darken($mainColour, 3%);
+}
+
+.home-img-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  img {
+    max-width: 50%;
+    max-height: 8rem;
+    margin: 2rem 0;}
+}
+
+.autism-link {
+  background-color: #D4D4C9;
+}
+
+.screenreaders-link {
+  background-color: #C8D8CC;
+}
+
+.lowvision-link {
+  background-color: #B1DADF;
 }
 
 /* CSS Modal -------------------------------------------------*/
@@ -383,9 +430,9 @@ margin: 0 2rem 1rem 2rem;}*/
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #000; }
 a:hover {
-  color: #0FA0CE; }
+  color: #000; }
 
 
 /* Buttons
@@ -579,7 +626,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 1.5rem; }
 
 
 /* Utilities

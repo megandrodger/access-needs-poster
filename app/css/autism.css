@@ -175,7 +175,7 @@
   body {
     margin: 0; }
   .homeTitle {
-    margin: 10px 10px 40px 10px; }
+    margin: 10px 0; }
   .homeLink {
     display: block;
     color: black;
@@ -315,6 +315,17 @@
   text-decoration: underline; }
 
 /* Sizing for menu page picture box */
+.home-intro {
+  padding: 0 0 1rem 0; }
+
+.title-line-1 {
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+.title-line-2 {
+  font-size: 3.2rem;
+  font-weight: bold; }
+
 .picturebox {
   flex-flow: column;
   text-align: center;
@@ -326,6 +337,33 @@
     margin-top: 0;
     display: block;
     color: black; }
+
+.home-card {
+  margin: 1.5rem; }
+  .home-card p {
+    text-align: center; }
+
+.full-width {
+  padding: 1.5rem;
+  background-color: #e9dbc5; }
+
+.home-img-container {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .home-img-container img {
+    max-width: 50%;
+    max-height: 8rem;
+    margin: 2rem 0; }
+
+.autism-link {
+  background-color: #D4D4C9; }
+
+.screenreaders-link {
+  background-color: #C8D8CC; }
+
+.lowvision-link {
+  background-color: #B1DADF; }
 
 /* CSS Modal -------------------------------------------------*/
 /*Greying out the background*/
@@ -494,10 +532,10 @@ margin: 0 2rem 1rem 2rem;}*/
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #000; }
 
 a:hover {
-  color: #0FA0CE; }
+  color: #000; }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -705,7 +743,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 1.5rem; }
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -763,7 +801,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
 
 h1 {
-  font-size: 2.9rem; }
+  font-size: 2.9rem;
+  letter-spacing: normal; }
 
 h2 {
   font-size: 1.9rem; }
@@ -805,7 +844,7 @@ html {
 body {
   font-size: 1.5em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
