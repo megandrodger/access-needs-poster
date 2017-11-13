@@ -177,7 +177,8 @@ $home-bg: darken($mainColour, 10%);*/
   body {
     margin: 0; }
   .homeTitle {
-    margin: 10px 0; }
+    margin: 10px 0;
+    display: block; }
   .homeLink {
     display: block;
     color: black;
@@ -350,7 +351,8 @@ $home-bg: darken($mainColour, 10%);*/
   padding: 0 0 1rem 0; }
 
 .title-line-1 {
-  font-size: 1.5rem;
+  display: block;
+  font-size: 2.1rem;
   font-weight: bold; }
 
 .title-line-2 {
@@ -370,7 +372,7 @@ $home-bg: darken($mainColour, 10%);*/
     color: black; }
 
 .home-card {
-  margin: 1.5rem; }
+  margin: 1.6rem 0; }
   .home-card p {
     text-align: center; }
 
@@ -381,6 +383,7 @@ $home-bg: darken($mainColour, 10%);*/
 .home-img-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center; }
   .home-img-container img {
     max-width: 50%;
@@ -395,6 +398,15 @@ $home-bg: darken($mainColour, 10%);*/
 
 .lowvision-link {
   background-color: #B1DADF; }
+
+.dyslexia-link {
+  background-color: #E7E2CB; }
+
+.deaf-link {
+  background-color: #DFD1DA; }
+
+.physical-link {
+  background-color: #BEDEDB; }
 
 /* CSS Modal -------------------------------------------------*/
 /*Greying out the background*/
@@ -460,13 +472,25 @@ $home-bg: darken($mainColour, 10%);*/
 /* for devices wider than a phablet -------------------------------------*/
 @media (min-width: 400px) {
   .homeTitle {
-    margin: 40px 0; }
+    margin: 4.8rem 0 1.6rem 0; }
+  .title-line-1 {
+    font-size: 5.2rem; }
+  .title-line-2 {
+    font-size: 5.2rem; }
   .homeLink {
     font-size: 2rem;
     padding: 1.3rem;
     padding-left: 3rem;
     color: black;
     text-decoration: underline; }
+  .home-card {
+    margin: 1.6rem; }
+  .home-img-container {
+    height: 16rem; }
+    .home-img-container img {
+      max-height: 70%; }
+  .email-footer {
+    margin: 4.8rem 0 3.2rem 0; }
   .titleFlexParent {
     margin: 0rem; }
   .modal-body {
@@ -481,7 +505,7 @@ $home-bg: darken($mainColour, 10%);*/
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 120px;
+    width: 130px;
     height: 120px;
     display: inline; }
   .guidanceBoxalt {

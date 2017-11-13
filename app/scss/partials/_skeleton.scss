@@ -59,6 +59,7 @@
 
 .homeTitle {
  margin: 10px 0;
+ display: block;
 }
 
 .homeLink {
@@ -270,7 +271,8 @@ text-decoration: underline;
   padding: 0 0 1rem 0;
 }
 .title-line-1 {
-  font-size: 1.5rem;
+  display: block;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 
@@ -287,7 +289,7 @@ text-decoration: underline;
 }
 
 .home-card {
-  margin: 1.5rem;
+  margin: 1.6rem 0;
   p {
     text-align: center;
   }
@@ -302,6 +304,7 @@ text-decoration: underline;
 .home-img-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   img {
     max-width: 50%;
@@ -319,6 +322,18 @@ text-decoration: underline;
 
 .lowvision-link {
   background-color: #B1DADF;
+}
+
+.dyslexia-link {
+  background-color: #E7E2CB;
+}
+
+.deaf-link {
+  background-color: #DFD1DA;
+}
+
+.physical-link {
+  background-color: #BEDEDB;
 }
 
 /* CSS Modal -------------------------------------------------*/
@@ -382,7 +397,15 @@ text-decoration: underline;
 @media (min-width: 400px) {
 
   .homeTitle {
-    margin: 40px 0;
+    margin: 4.8rem 0 1.6rem 0;
+  }
+
+  .title-line-1 {
+    font-size: 5.2rem;
+    //display: block;
+  }
+  .title-line-2 {
+    font-size: 5.2rem;
   }
   .homeLink {
     font-size: 2rem;
@@ -390,6 +413,21 @@ text-decoration: underline;
     padding-left: 3rem;
     color: black;
     text-decoration: underline;
+  }
+
+  .home-card {
+    margin: 1.6rem;
+  }
+
+  .home-img-container {
+    height: 16rem;
+    img {
+      max-height: 70%;
+    }
+  }
+
+  .email-footer {
+    margin: 4.8rem 0 3.2rem 0;
   }
 
   .titleFlexParent {margin: 0rem;}
@@ -409,7 +447,7 @@ text-decoration: underline;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 120px;
+    width: 130px;
     height: 120px;
     display: inline;
     }
