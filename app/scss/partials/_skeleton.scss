@@ -179,15 +179,6 @@
     }
 
 }
-/* Nav link */
-
-/*.navBar {
-  display: inline;
-  justify-content: space-between;
-  padding: 0rem 4rem 2rem;
-  margin: 2rem 0 3rem 0;
-  img {max-height: 50px; max-width: 50px;}
-}
 
 /* Page title */
 
@@ -443,12 +434,13 @@ text-decoration: underline;
   }
 
   .headerImage {
-    margin: 1rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
+    padding-left: 2rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 130px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     display: inline;
     }
 
